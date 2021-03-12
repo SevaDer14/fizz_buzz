@@ -27,6 +27,7 @@ def fizz_buzz(number)
     end    
 end
 
+# Method to output greeting message with rules of the game
 def print_greetings
     puts "lets play impossible FizzBuzz! The game you always loose.."
     puts "The rules:"
@@ -38,11 +39,16 @@ def print_greetings
     puts "          6. You think too long - you lose"    
 end
 
+# method to ask user to start or exit the game
 def start_game    
     answer = ''
-    until %w(y n).include? input
-        answer = ask("Start game? [y/n]")        
-    end
-    return answer
+    until answer.downcase == 'y'
+        answer = ask("Start game? [y/n]")
+        if answer == 'n'
+            abort 'Game Closed'
+        end      
+    end    
 end
+
+
     
