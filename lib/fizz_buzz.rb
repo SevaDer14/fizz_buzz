@@ -1,3 +1,5 @@
+require 'highline/import'
+
 # Checks number for divisablility on a divider
 def has_zero_remainder?(number, divider)
     number % divider == 0
@@ -24,3 +26,23 @@ def fizz_buzz(number)
         end
     end    
 end
+
+def print_greetings
+    puts "lets play impossible FizzBuzz! The game you always loose.."
+    puts "The rules:"
+    puts "          1. I go first and print 1, you go after me and type in 2"
+    puts "          2. Every turn we count upwards and typing in number"
+    puts "          3. If the number is divisable by 3 - tyoe in 'fizz'"
+    puts "          4. If the number is divisable by 5 - tyoe in 'buzz'"
+    puts "          5. If the number is divisable by both 3 and 5 - type in 'fizzbuzz'"
+    puts "          6. You think too long - you lose"    
+end
+
+def start_game    
+    answer = ''
+    until %w(y n).include? input
+        answer = ask("Start game? [y/n]")        
+    end
+    return answer
+end
+    
