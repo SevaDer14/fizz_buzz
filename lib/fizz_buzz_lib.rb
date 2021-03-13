@@ -50,5 +50,15 @@ def start_game
     end    
 end
 
+# countdown method
+def start_countdown(time)
+    seconds = time * 10
+    seconds.downto(0) do |i|
+        sleep 0.1
+    end
+end
+    puts "time is up"
+
+
 
     
