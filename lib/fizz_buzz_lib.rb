@@ -15,11 +15,11 @@ def fizz_buzz(number)
     else        
         if number == 0 # Special case if user inputs zero
             'Error#2: You hacked the universe! The answer is Quantum superposition of fizz, buzz, fizzbuzz and 0..'        
-        elsif has_zero_remainder(number, 15) # 15 first as it is itself divisable by 3 and 5
+        elsif has_zero_remainder?(number, 15) # 15 first as it is itself divisable by 3 and 5
             'fizzbuzz'
-        elsif has_zero_remainder(number, 3)
+        elsif has_zero_remainder?(number, 3)
             'fizz'
-        elsif has_zero_remainder(number, 3)
+        elsif has_zero_remainder?(number, 5)
             'buzz'    
         else
             number
@@ -31,12 +31,12 @@ end
 def print_greetings
     puts "lets play impossible FizzBuzz! The game you always loose.."
     puts "The rules:"
-    puts "          1. I go first and print 1, you go after me and type in 2"
-    puts "          2. Every turn we count upwards and typing in number"
-    puts "          3. If the number is divisable by 3 - tyoe in 'fizz'"
-    puts "          4. If the number is divisable by 5 - tyoe in 'buzz'"
+    puts "          1. I go first and say 1, you go after me and type in 2"
+    puts "          2. Every turn we count upwards and typing in number except:"
+    puts "          3. If the number is divisable by 3 - type in 'fizz'"
+    puts "          4. If the number is divisable by 5 - type in 'buzz'"
     puts "          5. If the number is divisable by both 3 and 5 - type in 'fizzbuzz'"
-    puts "          6. You think too long - you lose"    
+    puts "          6. NOT IMPLEMENTED YET (You think too long - you lose)"   
 end
 
 # method to ask user to start or exit the game

@@ -1,4 +1,4 @@
-require './lib/fizz_buzz'
+require './lib/fizz_buzz_lib'
 
 describe 'fizz_buzz' do
 
@@ -25,5 +25,5 @@ describe 'fizz_buzz' do
     it "returns 'Error#2' if user puts in 0" do
         expect(fizz_buzz(0)).to eq 'Error#2: You hacked the universe! The answer is Quantum superposition of fizz, buzz, fizzbuzz and 0..'
     end
-
+    
 end
