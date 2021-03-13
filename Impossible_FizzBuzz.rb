@@ -1,4 +1,4 @@
-load '/home/demerzel/ruby_exercises/fizz_buzz/lib/fizz_buzz_lib.rb'
+load './lib/fizz_buzz_lib.rb'
 
 print_greetings
 start_game
