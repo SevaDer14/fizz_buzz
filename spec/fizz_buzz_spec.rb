@@ -19,11 +19,11 @@ describe 'fizz_buzz' do
     end
 
     it "returns 'Error#1' if user puts in string" do
-        expect(fizz_buzz('string')).to eq 'Error#1: Please enter a positive number'
+        expect(fizz_buzz('string')).to eq 'Error#1: Please enter an integer > 0'
     end
 
-    it "returns 'Error#2' if user puts in 0" do
-        expect(fizz_buzz(0)).to eq 'Error#2: You hacked the universe! The answer is Quantum superposition of fizz, buzz, fizzbuzz and 0..'
+    it "returns 'Error#2' if user puts in number < 1" do
+        expect(fizz_buzz(0)).to eq 'Error#1: Please enter an integer > 0'
     end
     
 end

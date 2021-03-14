@@ -1,1 +1,4 @@
-Run Impossible_FizzBuzz.rb file and follow instructions
+To play the game run run_me.rb with Ruby and follow instructions
+
+I gont know, but maby you have to install highline gem, to do it
+run command: gem install highline
